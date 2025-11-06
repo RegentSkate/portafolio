@@ -56,7 +56,10 @@ export default function Home() {
               fontSize: { xs: '2.5rem', md: '3.5rem' },
               fontWeight: 700,
               mb: 2,
-              background: 'linear-gradient(45deg, #3b82f6 30%, #8b5cf6 90%)',
+              background: (theme) =>
+                theme.palette.mode === 'dark'
+                  ? 'linear-gradient(45deg, #3b82f6 30%, #8b5cf6 90%)'
+                  : 'linear-gradient(45deg, #2563eb 30%, #7c3aed 90%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
@@ -91,7 +94,7 @@ export default function Home() {
             }}
           >
             Con 2 años de experiencia en desarrollo de software, me especializo en crear
-            <strong style={{ color: '#3b82f6' }}> soluciones tecnológicas específicas</strong> para
+            <Box component="strong" sx={{ color: 'primary.main', fontWeight: 600 }}> soluciones tecnológicas específicas</Box> para
             cada cliente. Desarrollador Full Stack dedicado a construir aplicaciones
             eficientes y efectivas utilizando tecnologías modernas.
           </Typography>
@@ -169,9 +172,15 @@ export default function Home() {
                     display: 'flex',
                     flexDirection: 'column',
                     transition: 'all 0.3s ease',
+                    border: '1px solid',
+                    borderColor: 'divider',
                     '&:hover': {
                       transform: 'translateY(-8px)',
-                      boxShadow: '0 12px 24px rgba(59, 130, 246, 0.3)',
+                      boxShadow: (theme) =>
+                        theme.palette.mode === 'dark'
+                          ? '0 12px 24px rgba(59, 130, 246, 0.3)'
+                          : '0 12px 24px rgba(37, 99, 235, 0.2)',
+                      borderColor: 'primary.main',
                     },
                   }}
                 >
@@ -207,7 +216,7 @@ export default function Home() {
           
           <Grid container spacing={4}>
             <Grid size={{ xs: 12, md: 6 }}>
-              <Card sx={{ p: 3 }}>
+              <Card sx={{ p: 3, border: '1px solid', borderColor: 'divider' }}>
                 <Typography variant="h6" gutterBottom sx={{ fontWeight: 600, mb: 3 }}>
                   Frontend
                 </Typography>
@@ -226,7 +235,7 @@ export default function Home() {
             </Grid>
             
             <Grid size={{ xs: 12, md: 6 }}>
-              <Card sx={{ p: 3 }}>
+              <Card sx={{ p: 3, border: '1px solid', borderColor: 'divider' }}>
                 <Typography variant="h6" gutterBottom sx={{ fontWeight: 600, mb: 3 }}>
                   Backend
                 </Typography>
@@ -245,7 +254,7 @@ export default function Home() {
             </Grid>
             
             <Grid size={{ xs: 12, md: 6 }}>
-              <Card sx={{ p: 3 }}>
+              <Card sx={{ p: 3, border: '1px solid', borderColor: 'divider' }}>
                 <Typography variant="h6" gutterBottom sx={{ fontWeight: 600, mb: 3 }}>
                   Bases de Datos
                 </Typography>
@@ -264,7 +273,7 @@ export default function Home() {
             </Grid>
             
             <Grid size={{ xs: 12, md: 6 }}>
-              <Card sx={{ p: 3 }}>
+              <Card sx={{ p: 3, border: '1px solid', borderColor: 'divider' }}>
                 <Typography variant="h6" gutterBottom sx={{ fontWeight: 600, mb: 3 }}>
                   IA y Herramientas
                 </Typography>
@@ -297,7 +306,7 @@ export default function Home() {
             Contacto
           </Typography>
           
-          <Card sx={{ maxWidth: 600, mx: 'auto', p: 4 }}>
+          <Card sx={{ maxWidth: 600, mx: 'auto', p: 4, border: '1px solid', borderColor: 'divider' }}>
             <Stack spacing={3}>
               <Typography variant="h6" textAlign="center" color="text.secondary">
                 ¿Tienes un proyecto en mente? ¡Hablemos!
@@ -310,10 +319,10 @@ export default function Home() {
                     Email
                   </Typography>
                   <Link
-                    href="mailto:contacto@ejemplo.com"
+                    href="mailto:contacto@nexuslara.com"
                     sx={{ textDecoration: 'none', color: 'text.primary' }}
                   >
-                    contacto@ejemplo.com
+                    contacto@nexuslara.com
                   </Link>
                 </Box>
               </Box>
@@ -325,10 +334,10 @@ export default function Home() {
                     Teléfono
                   </Typography>
                   <Link
-                    href="tel:2222222222"
+                    href="tel:----"
                     sx={{ textDecoration: 'none', color: 'text.primary' }}
                   >
-                    222 222 2222
+                    Próximamente disponible
                   </Link>
                 </Box>
               </Box>
