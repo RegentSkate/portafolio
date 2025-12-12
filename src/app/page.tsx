@@ -49,7 +49,7 @@ export default function Home() {
               borderColor: 'primary.main',
             }}
           />
-          
+
           <Typography
             variant="h1"
             sx={{
@@ -67,7 +67,7 @@ export default function Home() {
           >
             Cristhian Yair Lara Reyes
           </Typography>
-          
+
           <Typography
             variant="h5"
             color="text.secondary"
@@ -75,14 +75,14 @@ export default function Home() {
           >
             Ingeniero de Software
           </Typography>
-          
+
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 4 }}>
             <LocationOnIcon sx={{ color: 'text.secondary', fontSize: 20 }} />
             <Typography color="text.secondary">
               Puebla, México
             </Typography>
           </Box>
-          
+
           <Typography
             variant="h6"
             color="text.secondary"
@@ -98,7 +98,7 @@ export default function Home() {
             cada cliente. Desarrollador Full Stack dedicado a construir aplicaciones
             eficientes y efectivas utilizando tecnologías modernas.
           </Typography>
-          
+
           <Box sx={{ display: 'flex', gap: 2, mb: 2 }}>
             <Button
               variant="contained"
@@ -131,7 +131,7 @@ export default function Home() {
           >
             Servicios
           </Typography>
-          
+
           <Grid container spacing={3}>
             {[
               {
@@ -213,7 +213,7 @@ export default function Home() {
           >
             Tecnologías y Habilidades
           </Typography>
-          
+
           <Grid container spacing={4}>
             <Grid size={{ xs: 12, md: 6 }}>
               <Card sx={{ p: 3, border: '1px solid', borderColor: 'divider' }}>
@@ -233,7 +233,7 @@ export default function Home() {
                 </Stack>
               </Card>
             </Grid>
-            
+
             <Grid size={{ xs: 12, md: 6 }}>
               <Card sx={{ p: 3, border: '1px solid', borderColor: 'divider' }}>
                 <Typography variant="h6" gutterBottom sx={{ fontWeight: 600, mb: 3 }}>
@@ -252,7 +252,7 @@ export default function Home() {
                 </Stack>
               </Card>
             </Grid>
-            
+
             <Grid size={{ xs: 12, md: 6 }}>
               <Card sx={{ p: 3, border: '1px solid', borderColor: 'divider' }}>
                 <Typography variant="h6" gutterBottom sx={{ fontWeight: 600, mb: 3 }}>
@@ -271,7 +271,7 @@ export default function Home() {
                 </Stack>
               </Card>
             </Grid>
-            
+
             <Grid size={{ xs: 12, md: 6 }}>
               <Card sx={{ p: 3, border: '1px solid', borderColor: 'divider' }}>
                 <Typography variant="h6" gutterBottom sx={{ fontWeight: 600, mb: 3 }}>
@@ -305,13 +305,13 @@ export default function Home() {
           >
             Contacto
           </Typography>
-          
+
           <Card sx={{ maxWidth: 600, mx: 'auto', p: 4, border: '1px solid', borderColor: 'divider' }}>
             <Stack spacing={3}>
               <Typography variant="h6" textAlign="center" color="text.secondary">
                 ¿Tienes un proyecto en mente? ¡Hablemos!
               </Typography>
-              
+
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                 <EmailIcon sx={{ color: 'primary.main' }} />
                 <Box>
@@ -326,7 +326,7 @@ export default function Home() {
                   </Link>
                 </Box>
               </Box>
-              
+
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                 <PhoneIcon sx={{ color: 'primary.main' }} />
                 <Box>
@@ -341,7 +341,7 @@ export default function Home() {
                   </Link>
                 </Box>
               </Box>
-              
+
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                 <LocationOnIcon sx={{ color: 'primary.main' }} />
                 <Box>
@@ -351,7 +351,7 @@ export default function Home() {
                   <Typography>Puebla, México</Typography>
                 </Box>
               </Box>
-              
+
               <Box sx={{ pt: 2 }}>
                 <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
                   Redes Sociales
@@ -392,9 +392,6 @@ export default function Home() {
         >
           <Typography variant="body2" color="text.secondary">
             © {new Date().getFullYear()} Cristhian Yair Lara Reyes. Todos los derechos reservados.
-          </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-            Desarrollado con Next.js y Material-UI
           </Typography>
         </Box>
       </Container>
